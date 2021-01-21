@@ -56,9 +56,9 @@ dist: build m-doc
 
 .PHONY: java
 java:
-	cd src/java/MyCoolProject-java; mvn package
-	mkdir -p lib/java/MyCoolProject-java
-	cp src/java/MyCoolProject-java/target/*.jar lib/java/MyCoolProject-java
+	cd src/java/DemoMatlabJavaDefaultCtor-java; mvn package
+	mkdir -p lib/java/DemoMatlabJavaDefaultCtor-java
+	cp src/java/DemoMatlabJavaDefaultCtor-java/target/*.jar lib/java/DemoMatlabJavaDefaultCtor-java
 
 .PHONY: clean
 clean:
