@@ -18,11 +18,11 @@ DISTFILES=build/Mcode doc lib examples README.md LICENSE CHANGES.txt
 
 .PHONY: test
 test:
-	./dev-kit/launchtests_mypackage
+	./dev-kit/launchtests_demodfltctor
 
 .PHONY: build
 build:
-	./dev-kit/build_mypackage
+	./dev-kit/build_demodfltctor
 
 # Build the programmatically-generated parts of the _source_ files for the doco
 .PHONY: docs
@@ -44,7 +44,7 @@ m-doc: doc
 
 .PHONY: toolbox
 toolbox: m-doc
-	bash ./dev-kit/package_mypackage_toolbox
+	bash ./dev-kit/package_demodfltctor_toolbox
 
 .PHONY: dist
 dist: build m-doc

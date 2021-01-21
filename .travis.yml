@@ -3,13 +3,13 @@ matlab:
   - R2020a
   - R2020b
 script:
-  - matlab -batch "addpath dev-kit; launchtests_mypackage"
+  - matlab -batch "addpath dev-kit; launchtests_demodfltctor"
   - make test
   - make dist
   - make toolbox
   - make clean
   # make dist does make doc, which alters the contents of doc/. Reset to revert.
   - git reset --hard
-  - ./MatlabProjectTemplate/test_project_initialization
+  
 # Remove this if you don't use codecov.io
 after_script: bash <(curl -s https://codecov.io/bash)

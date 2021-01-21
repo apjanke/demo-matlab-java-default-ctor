@@ -8,9 +8,9 @@ just copy and paste.
 
 Summary:
 
-__myproject_summary__
+Repro for Matlab's behavior with Java classes that have default constructors
 
 
 Description:
 
-__myproject_description__
+Repro for Matlab's behavior with Java classes that have default constructors
